@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Вход - АИС "Система контроля успеваемости"</title>
+<link rel="stylesheet" href="style_auth.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Вход в систему</h1>
+        <p>Добро пожаловать в АИС "Система контроля успеваемости"!</p>
+  	  <p>Войдите в свой аккаунт для редактирования информации.</p>
+        <form action="prep_profile.html" method="post">
+            <div class="form-group">
+                <label for="email">Username:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Войти">
+            </div>
+        </form>
+        <p>Вернуться на <a href="index.html">главную страницу</a>.</p>
+    </div>
+</body>
+</html>

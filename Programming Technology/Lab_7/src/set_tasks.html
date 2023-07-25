@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Отправка файла на сервер</title>
+ </head>
+ <body>
+  <h1>Установка заданий</h1>
+ <p>Выберите дисциплину</p>
+ <form>
+  <select>
+    <option disabled>Дисциплина: </option>
+    <option>Алгоритмы и структуры данных</option>
+    <option>Математический Анализ</option>
+    <option>МДиСУБД</option>
+    <option>Дискретная математика и математическая логика</option>
+    <option>Линейная алгебра</option>
+  </select>
+ </form>
+  <form enctype="multipart/form-data" method="post" action="sent.html">
+   <p><input type="file" name="f">
+   <input type="submit" value="Отправить"></p>
+  </form>
+<form>
+  <p>Введите комментарий к заданию</p>
+  <input type="text" placeholder="комментарий">
+</form>
+  <p>Вернуться <a href="stud_profile.html">назад</a>.</p> 
+ </body>
+</html>

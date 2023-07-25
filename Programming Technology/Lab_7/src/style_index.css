@@ -1,0 +1,35 @@
+h1 {
+color: orange;
+text-align: center;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+
+}
+
+p {
+font-family: Arial;
+font-size: 22px;
+text-align: center;
+}
+
+a {
+margin: 10px;
+padding: 10px;
+border: 1px solid black;
+text-decoration: none;
+color: red;
+}
+
+a:hover {
+background-color: brown;
+}
+
+div_1 {
+  display: grid;
+  align-items: end;
+  text-align: center;
+  height: 600px;
+}
