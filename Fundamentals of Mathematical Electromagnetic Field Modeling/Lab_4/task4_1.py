@@ -12,7 +12,7 @@ def create_matrix():
 #                  [0,0,0,0,0,11,2],
 #                  [-8,-8,-8,-8,-8,-8,-8]])
 
-    A = np.diag([1, 3, 5, 7, 9, 11, 0]) + np.diag([2, 2, 2, 2, 2, 2], k=1)
+    A = np.diag(np.arange(1, 14, 2)) + np.diag(2 * np.ones(6), k=1)
     A[-1, :] = -8
     
     E = np.eye(7)
