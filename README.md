@@ -8,8 +8,7 @@ Repository for university labs on Faculty of Applied Mathematics and Computer Sc
   -  This course is designed to teach students the practical skills needed for industrial programming using Java, how to develop software applications using Java programming language, including object-oriented programming, data structures, and algorithms. They will also learn about software development methodologies and tools commonly used in the industry.
 - [Operating Systems](https://github.com/makszeus/bsu/tree/main/Operating%20Systems)</br>
   - The course "Operating Systems" studies the principles of structural organization and construction of operating systems, as well as practical work with the system tools of the Windows operating system. The purpose of this course is to study the organization of operating systems, the principles of flow management, processes and the organization of data transfer between processes, as well as the management of virtual memory and files.
-- [Programming Technology](https://github.com/makszeus/bsu/tree/main/Programming%20Technology)
-  - This course covers various programming technologies and tools used in software development, different programming paradigms, such as procedural, object-oriented, and functional programming, software development tools, such as version control systems, integrated development environments, and testing frameworks.
+
  
 #### 3-rd course:
 - [Computational Methods of Algebra](https://github.com/makszeus/bsu/tree/main/Computational%20Methods%20of%20Algebra)
