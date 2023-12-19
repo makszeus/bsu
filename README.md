@@ -1,6 +1,9 @@
 # Belarusian State University
 Repository for university labs on Faculty of Applied Mathematics and Computer Science of the Belarusian State University.</br>
 
+#### 1-st course:
+- [Fundamentals and Methodologies of Programming](https://github.com/makszeus/bsu/tree/main/Fundamentals%20and%20Methodologies%20of%20Programming)
+
 #### 2-nd course:
 - [Algorithms and Data Structures](https://github.com/makszeus/bsu/tree/main/Algorithms)
   - This course focuses on the fundamental concepts of algorithms and data structures, how to design, analyze, and implement efficient algorithms for solving various computational problems. They will also learn about different data structures and their applications in computer science. The educational process uses the [iRunner 2](https://acm.bsu.by) Educational platform
