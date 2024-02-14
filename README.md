@@ -5,7 +5,7 @@ Repository for university labs on Faculty of Applied Mathematics and Computer Sc
 - [Fundamentals and Methodologies of Programming](https://github.com/makszeus/bsu/tree/main/Fundamentals%20and%20Methodologies%20of%20Programming)
 
 #### 2-nd course:
-- [Algorithms and Data Structures](https://github.com/makszeus/bsu/tree/main/Algorithms)
+- [Algorithms and Data Structures](https://github.com/makszeus/bsu/tree/main/Algorithms%20and%20Data%20Structures)
   - This course focuses on the fundamental concepts of algorithms and data structures, how to design, analyze, and implement efficient algorithms for solving various computational problems. They will also learn about different data structures and their applications in computer science. The educational process uses the [iRunner 2](https://acm.bsu.by) Educational platform
 - [Industrial Programming](https://github.com/makszeus/bsu/tree/main/Industrial%20Programming)
   -  This course is designed to teach students the practical skills needed for industrial programming using Java, how to develop software applications using Java programming language, including object-oriented programming, data structures, and algorithms. They will also learn about software development methodologies and tools commonly used in the industry.
