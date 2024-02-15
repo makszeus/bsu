@@ -19,9 +19,9 @@ Repository for university labs on Faculty of Applied Mathematics and Computer Sc
 - [Free-boundary Problems](https://github.com/makszeus/bsu/tree/main/Free-boundary%20Problems)
   -  This folder contains resources and implementations related to the study of Free-boundary problems. These problems occur in various fields such as fluid dynamics, financial mathematics, and phase transitions.
      Content:
-	1. **Theory**: Detailed explanations and mathematical formulations of various free-boundary problems.
-	2. **Numerical Methods**: Implementation of numerical methods for solving these problems, such as finite difference methods, finite element methods, etc.
-	3. **Examples**: Practical examples and case studies demonstrating the application of these methods.
+		1. **Theory**: Detailed explanations and mathematical formulations of various free-boundary problems.
+		2. **Numerical Methods**: Implementation of numerical methods for solving these problems, such as finite difference methods, finite element methods, etc.
+		3. **Examples**: Practical examples and case studies demonstrating the application of these methods.
 - [Functional Analysis and Integral Equations](https://github.com/makszeus/bsu/tree/main/Functional%20Analysis%20and%20Integral%20Equations)
   -  Contains resources related to the study of Functional Analysis. It includes theoretical concepts, practical applications, and problem-solving techniques.
 - [Numerical Analysis](https://github.com/makszeus/bsu/tree/main/Numerical%20Analysis)
