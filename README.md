@@ -15,14 +15,12 @@ Repository for university labs on Faculty of Applied Mathematics and Computer Sc
  
 #### 3-rd course:
 - [Computational Methods of Algebra](https://github.com/makszeus/bsu/tree/main/Computational%20Methods%20of%20Algebra)
-  -  This repository folder contains materials related to the study and implementation of various computational methods in algebra. The content ranges from basic concepts to advanced techniques and applications.
+  - Computational Methods of Algebra include techniques for solving systems of linear algebraic equations (such as Gaussian Elimination, LU Decomposition, Tridiagonal Matrix Algorithm, Simple Iteration Method, Jacobi Method, and Minimum Residual Method), as well as methods for solving eigenvalue problems (such as Danilevsky's Method, Krylov's Method, and Iterative Rotation Methods), among others.
+- [Computer Modeling of Nanosystems](https://github.com/makszeus/bsu/tree/main/Computer%20Modeling%20of%20Nanosystems)
+  - In this course the following topics are covered: Numerical Optimization Methods, Calculation of Electric Fields in Semiconductor Nanostructures, Calculation of States in Single-Electron Nanoscale Structures and  Modeling Many-Electron Systems.
 - [Free-boundary Problems](https://github.com/makszeus/bsu/tree/main/Free-boundary%20Problems)
-  -  This folder contains resources and implementations related to the study of Free-boundary problems. These problems occur in various fields such as fluid dynamics, financial mathematics, and phase transitions.
-     Content:
-		1. **Theory**: Detailed explanations and mathematical formulations of various free-boundary problems.
-		2. **Numerical Methods**: Implementation of numerical methods for solving these problems, such as finite difference methods, finite element methods, etc.
-		3. **Examples**: Practical examples and case studies demonstrating the application of these methods.
+  - 
 - [Functional Analysis and Integral Equations](https://github.com/makszeus/bsu/tree/main/Functional%20Analysis%20and%20Integral%20Equations)
-  -  Contains resources related to the study of Functional Analysis. It includes theoretical concepts, practical applications, and problem-solving techniques.
+  - 
 - [Numerical Analysis](https://github.com/makszeus/bsu/tree/main/Numerical%20Analysis)
-  -  Introduces to the field of Numerical Analysis. It covers techniques for the efficient numerical solution of problems that commonly arise in scientific research. It is explored the theory and implementation of algorithms used to solve mathematical problems numerically.
+  - 
