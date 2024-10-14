@@ -17,10 +17,10 @@ Repository for university labs, projects, works on Faculty of Applied Mathematic
 
  
 #### 3-rd Course:
-- [Coursework #3](https://github.com/makszeus/bsu/tree/main/course-work-5-sem)
+- [Coursework #1](https://github.com/makszeus/bsu/tree/main/course-work-5-sem)
   - Numerical Simulation of Heat Propagation in a Homogeneous Sphere.
 
-- [Coursework #3](https://github.com/makszeus/bsu/tree/main/course-work-6-sem)
+- [Coursework #2](https://github.com/makszeus/bsu/tree/main/course-work-6-sem)
   - Difference Schemes for the Diffusion Equation.
 
 - [Computational Methods of Algebra](https://github.com/makszeus/bsu/tree/main/computational-methods-of-algebra)
