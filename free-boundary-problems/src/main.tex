@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{slashed}
+\usepackage{mathptmx}
+
+\usepackage[a4paper, margin=0.5in]{geometry}
+\title{Построение разностной задачи}
+\author{Равновесная форма свободной поверхности, определяющаяся функцией $y(x)$}
+\date{19 апреля 2024 г.}
+\begin{document}
+\maketitle
+
+\section{Построение разностной задачи}
+
+Рассмотрим безразмерную постановку задачи о равновесной форме свободной поверхности, которая определяется функцией $y(x)$, $(0 \leq x \leq 1)$, которая зависит от двух параметров (число Бонда $Bo = \frac{\rho g}{\sigma}S$ и угол смачивания $\alpha$ и является решением краевой задачи вида: \\
+
+\begin{equation}
+    \frac{y''}{(1+(y')^2)^{3/2}} = \frac{Bo}{I}y + q,
+\end{equation}
+
+\begin{equation}
+    y'(0) = 0,
+\end{equation}
+
+\begin{equation}
+    y'(1) = -tg\alpha, y(1) = 0,
+\end{equation}
+
+\begin{equation}
+    I = 2\int_0^1 y dx
+\end{equation}
+
+\begin{equation}
+    q = -sin\alpha - \frac{Bo}{2}.
+\end{equation}
+
+Для аппроксимации уравнений (1)-(5) в области определения искомой функции $у(х)$ введем равномерную сетку $\omega_{h} = \{x_k = kh, k = \overline{0,N}, h = \frac{1}{N}  \}$, где $N$ - число разбиений отрезка $[0,1]$.\\
+
+Запишем разностные уравнения для сеточной функции $y(x_k) = y_k, k =  \overline{0,N}$, аппроксимирующие исходные уравнения с погрешностью $O(h^2)$.\\
+
+Тогда вместо (1) будем иметь:
+
+\begin{equation}
+    \frac{1}{h^2}(y_{k-1} - 2y_k + y_{k+1}) = \left(1 + \left(\frac{y_{k+1} - y_{k-1}}{2h}\right)^{2}\right)^{3/2} \left(\frac{Bo}{I_h}y_k + q\right), 
+\end{equation}
+
+\begin{center}
+где $q = -\left(\sin\alpha + \frac{Bo}{2}\right), \quad k = \overline{1, N-1}.$ \\
+\end{center}
+
+Аппроксимации условий (2)-(3) примут следующий вид:
+
+\begin{equation}
+    \frac{y_1 - y_0}{h} = \frac{h}{2}\left(\frac{Bo}{I_h}y_0 + q\right),
+\end{equation}
+
+\begin{equation}
+    \frac{y_N - y_{N - 1}}{h} = -tg\alpha - \frac{h}{2}\frac{1}{cos^3\alpha}q, y_N = 0.
+\end{equation}
+
+Величину интеграла (4) вычислим по составной квадратурной формуле трапеций, а именно: 
+
+\begin{equation}
+    I_h = 2h\left(\frac{(y_0 + y_N)}{2} + \sum\limits_{k=1}^{N-1} y_k\right).
+\end{equation}
+
+Таким образом, разностные уравнения (6)-(8) с учетом формулы (9) представляют собой разностную схему второго порядка аппроксимации.
+
+\section{Организация итерационного процесса}
+
+Так как система уравнений (6)-(9) является нелинейной, то для ее решения организуем следующий итерационный процесс. Вычисления на $m + 1$ итерации осуществляются в таком
+порядке: сначала прогонкой решается нижеследующая система, образованная уравнениями (6), (7) и (8):
+
+\begin{equation}
+    y_{k+1}^{(m+1)} - 2y_k^{(m+1)} + y_{k-1}^{(m+1)} = h^2 \left[ 1 + \left(\frac{y_{k+1}^{(m)} - y_{k-1}^{(m)}}{2h}\right)^2\right]^{3/2}\left(\frac{Bo}{I_h^{(m)}}y_k^{(m)}\right) + q, k = \overline{1, N-2},
+\end{equation}
+
+\begin{equation}
+    y_0^{(m+1)} = \frac{1}{1 + \frac{h^2}{2I_h^{(m)}}Bo} y_1^{(m+1)} - \frac{h^2q}{2\left(1+\frac{h^2}{2I_h^{(m)}}Bo\right)},
+\end{equation}
+
+\begin{equation}
+    y_{N-1}^{(m+1)} = htg\alpha + \frac{h^2}{2}\frac{1}{cos^3\alpha}q, y_N^{(m+1)} = 0.
+\end{equation}
+
+Вследствие чего находятся $y_{k}^{(m+1)}$ при всех $k$. Для стабилизации итерационного процесса полученные значения $y_k^{(m+1)}$ пересчитываются по формуле:
+
+\begin{equation}
+    y_k^{(m+1)} =  \tau * y_k^{(m+1)} + (1 - \tau) * y_k^{(m)},
+\end{equation}
+
+\begin{center}
+    где $\tau$ - параметр релаксации $(0 < \tau \leq 1).$    
+\end{center}
+
+После этого уточняется значение $I_h$ по формуле:
+
+\begin{equation}
+    I_h^{(m+1)} = 2h\left(\frac{y_0^{(m+1)}}{2} + \sum\limits_{k=1}^{N-1} y_k^{(m+1)}\right),
+\end{equation}
+
+Итерации проводятся до достижения заданной точности $\epsilon$, т.е. до тех пор, пока не выполнится условие:
+
+\begin{equation}
+    \frac{|y_k^{(m+1)} - y_k^{(m)}|}{\tau} \leq \epsilon, \forall k.
+\end{equation}
+\end{document}

@@ -1,0 +1,32 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{angles,quotes}
+
+\begin{document}
+\begin{tikzpicture}
+    % Draw axes
+
+    \coordinate (origo) at (0,0);
+    \coordinate (pivot) at (1,0);
+    \coordinate (krw) at (0.9, 0.2);
+    
+    \draw [->,thick] (-2,0) -- (2,0) node[right] {\tiny $x$};
+    \draw [->,thick] (0,-2) -- (0,2) node[above] {\tiny $y$};
+
+    % Draw points
+    \fill (-1,0) circle (1pt) node[below left] {\tiny -1};
+    \fill (1,0) circle (1pt) node[below left] {\tiny 1};
+    \fill (0,0) circle (1pt) node[below left] {\tiny 0};
+
+    % Draw parabola
+    \draw [dashed, domain=-1:0] plot (\x, {-\x*\x + 1});
+    \draw [domain=0:1] plot (\x, {-\x*\x + 1});
+
+    % Draw tangent line
+    \draw [black] (1,0) -- (0.5,1.0);
+
+    % Draw angle
+    \pic [draw=black, angle radius=0.35cm, text=black, -, "\tiny $\alpha$", angle eccentricity=1.3] {angle = krw--pivot--origo};
+
+\end{tikzpicture}
+\end{document}
