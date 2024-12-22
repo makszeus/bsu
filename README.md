@@ -22,7 +22,6 @@ Repository for university labs, projects, works on Faculty of Applied Mathematic
 
 - [Computer Modeling of Nanosystems](https://github.com/makszeus/bsu/tree/main/computer-modeling-of-nanosystems)
 - [Equations of Mathematical Physics](https://github.com/makszeus/bsu/tree/main/equations-of-mathematical-physics)
-  - 
 
 - [Free-boundary Problems](https://github.com/makszeus/bsu/tree/main/free-boundary-problems)
 
