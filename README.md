@@ -31,7 +31,10 @@ Repository for university labs, projects, works on Faculty of Applied Mathematic
 
 #### 4-th Course:
 - [Coursework #3](https://github.com/makszeus/bsu/tree/main/course-work-7-sem)
+  - Modeling the diffusion of multi-charged impurities in
+semiconductors
 - [Graduation Thesis](https://github.com/makszeus/bsu/tree/main/graduation-thesis)
+  - Numerical calculation of multi-component diffusion profiles in a semiconductor
 - [Mathematical Modeling in Natural Sciences](https://github.com/makszeus/bsu/tree/main/mathematical-modeling-in-natural-sciences)
 - [Methods and Algorithms of Data Processing](https://github.com/makszeus/bsu/tree/main/methods-and-algorithms-of-data-processing)
 - [Numerical Methods of Mathematical Physics](https://github.com/makszeus/bsu/tree/main/numerical-methods-of-mathematical-physics)
