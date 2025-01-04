@@ -17,8 +17,7 @@
 
 ## Example
 
-|input.txt|output.txt|
-|---------|----------|
+|**input.txt**|**output.txt**|
 |2 2      |3         |
 |1 1      |          |
 |2 3      |          |
